@@ -1,0 +1,93 @@
+Q1: What are the Probability Mass Function (PMF) and Probability Density Function (PDF)? Explain with
+an example.
+ANS.  Probability Mass Function (PMF) and Probability Density Function (PDF) are mathematical functions used in probability theory to describe the probability distribution of a discrete random variable and a continuous random variable, respectively. The PMF gives the probability of each possible outcome in a discrete probability distribution, while the PDF gives the relative likelihood of different values in a continuous probability distribution.
+
+For example, let's say we have a coin that we flip five times, and we're interested in the number of times it lands on heads. The number of heads can be any integer from 0 to 5, so we have a discrete probability distribution. The PMF for this distribution gives the probability of each possible outcome, as shown below:
+
+Number of Heads (X)  	PMF
+0                   	1/32
+1                   	5/32
+2                   	10/32
+3                    	10/32
+4                    	5/32
+5                   	1/32
+On the other hand, if we're interested in the height of students in a class, the height can take on any real value in a certain range, so we have a continuous probability distribution. The PDF for this distribution gives the relative likelihood of different heights, as shown below:
+
+
+Q2: What is Cumulative Density Function (CDF)? Explain with an example. Why CDF is used?
+ANS. The Cumulative Density Function (CDF) is a mathematical function used in probability theory to describe the cumulative probability distribution of a random variable. The CDF gives the probability that the random variable takes a value less than or equal to a given value. It is defined as the integral of the PDF or sum of the PMF from negative infinity to the given value.
+
+For example, let's say we have a continuous random variable X with a PDF f(x) = 2x for 0 ≤ x ≤ 1, and 0 otherwise. The CDF F(x) is given by:
+
+F(x) = ∫₀ˣ 2t dt = x^2
+
+The CDF is used to calculate probabilities of events, to find percentiles of a distribution, and to generate random numbers from a distribution.
+
+
+Q3: What are some examples of situations where the normal distribution might be used as a model?
+Explain how the parameters of the normal distribution relate to the shape of the distribution.
+ANS.  The normal distribution is a probability distribution that is widely used in statistical modeling because many natural phenomena follow a normal or near-normal distribution. Examples of situations where the normal distribution might be used include:
+
+Heights or weights of a population
+Test scores on a standardized exam
+Error in measurement or experimental data
+IQ scores of a population
+Blood pressure or cholesterol levels in a population
+
+
+Q4: Explain the importance of Normal Distribution. Give a few real-life examples of Normal
+Distribution.
+ANS. The normal distribution is important because it is a fundamental distribution in probability theory and statistics. It is used extensively in statistical inference, hypothesis testing, and data analysis. Some real-life examples of normal distribution include:
+
+Heights of a population
+Weights of a population
+IQ scores of a population
+Blood pressure levels in a population
+Test scores on a standardized exam
+
+
+
+Q5: What is Bernaulli Distribution? Give an Example. What is the difference between Bernoulli
+Distribution and Binomial Distribution?
+ANS. The Bernoulli distribution is a discrete probability distribution that models the probability of a binary outcome (e.g., success/failure, heads/tails). The distribution is characterized by a single parameter p, which is the probability of success. An example of a Bernoulli distribution is flipping a fair coin, where p = 0.5.
+
+The main difference between the Bernoulli distribution and the binomial distribution is that the Bernoulli distribution models a single trial with a binary outcome, while the binomial distribution models the number of successes in a fixed number of independent Bernoulli trials. The binomial distribution has two parameters, n (the number of trials) and p (the probability of success in each trial).
+
+
+Q6. Consider a dataset with a mean of 50 and a standard deviation of 10. If we assume that the dataset
+is normally distributed, what is the probability that a randomly selected observation will be greater
+than 60? Use the appropriate formula and show your calculations.
+ANS. To calculate the probability that a randomly selected observation from a normal distribution with a mean of 50 and a standard deviation of 10 will be greater than 60, we need to standardize the value using the z-score formula:
+
+z = (x - μ) / σ
+
+where x is the value we want to find the probability for, μ is the mean, and σ is the standard deviation. In this case, x = 60, μ = 50, and σ = 10, so:
+
+z = (60 - 50) / 10 = 1
+
+We can then use a standard normal distribution table or calculator to find the probability of z being greater than 1. The probability is approximately 0.1587, or 15.87%.
+
+
+
+Q7: Explain uniform Distribution with an example.
+ANS. The uniform distribution is a probability distribution where all outcomes are equally likely over a range of values. The PDF of a uniform distribution is a constant function over the range of the distribution. An example of a uniform distribution is rolling a fair die, where each of the six faces has an equal probability of being rolled.
+
+
+Q8: What is the z score? State the importance of the z score.
+ANS. The z-score is a standardized score that measures the distance of a data point from the mean in units of standard deviation. The formula for the z-score is:
+
+z = (x - μ) / σ
+
+where x is the data point, μ is the mean, and σ is the standard deviation. The z-score is important because it allows us to compare data points from different normal distributions on a standardized scale. We can also use the z-score to calculate probabilities and percentiles of a normal distribution.
+
+
+Q9: What is Central Limit Theorem? State the significance of the Central Limit Theorem.
+ANS. : The Central Limit Theorem (CLT) is a fundamental concept in probability theory and statistics. It states that as the sample size increases, the distribution of the sample means approaches a normal distribution, regardless of the shape of the population distribution. This means that even if the population distribution is not normal, we can use the normal distribution as an approximation for the distribution of the sample means. The CLT is significant because it allows us to make inferences about a population based on a sample, using methods such as hypothesis testing and confidence intervals.
+
+
+Q10: State the assumptions of the Central Limit Theorem.
+ANS. The sample is drawn from a population with a finite mean and variance.
+
+The sample is a random sample, meaning that each observation is independent and identically distributed (i.i.d.).
+
+The sample size is large enough, typically greater than or equal to 30, to ensure that the sample means are normally distributed.
